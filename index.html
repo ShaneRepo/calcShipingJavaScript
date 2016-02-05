@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculate Shipping</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
 </head>
 <body>
-
+    <header>
+        <h1>Calculate Shipping</h1>
+    </header>
+<main>
+    <form>
+        <label for="price">Enter Purchase Price</label>
+        <input type="text" id="price">
+        <button id="submit" type="button"  onclick="calcShipping();">Calculate Shipping</button>
+    </form>
+</main>
 </body>
 </html>
+<!--
+Create a web page that allows a user to enter a purchase price into a text box; include a
+JavaScript function that calculates shipping and handling.  Add functionality to the script that
+adds a minimum shipping and handling fee of $1.50 for any purchase that is less than or equal to $25.00.
+For orders over $25.00 add 10% to the total purchase price for shipping and handling INSTEAD
+of the minimum charge of $1.50.  The formula for calculating a percentage is price * percent /100.
+After you determine the total cost of the order (purchase price plus shipping and handling), display it in an alert dialog box. -->
